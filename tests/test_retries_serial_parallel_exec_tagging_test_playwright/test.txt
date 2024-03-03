@@ -1,0 +1,20 @@
+//concept of retries
+in the config file add the property retries:1
+command to run: npx playwright test filename --config configfilename 
+
+concept of running test case in serial and parallel test case
+//all the test case present in particular file run in serail wise and test case present in the another file run parallel wise
+to control it -->go to config file , and to disable the parallel mechansim : workers:1
+
+
+//to run test in parallel inside the filename
+test.describe.configure({mode:'parallel'}); //now run in the parallel mode
+test.desribe.configure({mode:'serail'}); //if one test case fail then other will skip
+
+//reason for test failures
+workers represent to the file
+
+//tag concept
+@Web give name in the title
+//then in the command line to run specific tagged title
+//npx playwright test --grep @tagname

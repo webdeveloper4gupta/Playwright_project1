@@ -1,0 +1,7 @@
+Here I tell you the concept of the specific element by using the specific tag provided by the playwright
+getByLabel() works only well with the checkbox and radio button , it does not work well with the type concept
+//with dropdown it also work
+
+
+another way to run the test
+npx playwright test --ui
